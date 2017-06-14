@@ -1,0 +1,285 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  color: black;
+  font-size: 20px;
+  margin:auto 0px;
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 3.5rem;
+}
+h3,
+h4,
+h5,
+p{
+  font-size: 2.5rem;
+}
+
+.flex-container {
+  display:inline-flex;
+  width:100%;
+  margin: auto 0;
+}
+/*nav bar at top */
+
+#topbar{
+  height: 64px;
+  margin-left: 24px;
+  justify-content: space-between;
+  width: 100%;
+  display:inline-flex;
+  background-color: white;
+}
+.topbarend{
+  display:inline-flex;
+  margin: auto 0px;
+}
+.topbarend h4{
+  margin-right:16px;
+}
+
+
+/*intro section */
+
+#intro.flex-container{
+  background-color: gray;
+  align-items: stretch;
+  margin-top: 32px 0px 32px 0px;
+}
+.intro{
+  min-width:60%;
+  max-width: 60%;
+  margin: 32px 40px 32px 24px;
+}
+.intro img{
+  width: 100%;
+  margin-right: 40px;
+}
+.learn{
+  margin: auto 0;
+}
+.learn h3{
+  text-align: center;
+  display:inline-block;
+  background-color: blue;
+  padding: 8px;
+  width: 100%;
+}
+
+/*practice section */
+#practice .flex-container{
+  background-color: white;
+}
+
+.practice{
+  min-width: 60%;
+  max-width:60%;
+  margin: 32px 40px 32px 24px;
+}
+
+.practice img{
+  width: 100%;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.practicetext{
+  display: inline-block;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.sidecolumns{
+  width: 423px;
+  flex-grow: 1;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.orientation img,
+.campus img,
+.lecture img{
+  min-width: 35%;
+  max-width: 35%;
+  margin: 16px 16px;
+}
+
+.orientation,
+.campus,
+.lecture{
+  display: flex;
+  align-items:center;
+  text-align: left;
+  margin: 0 auto;
+  min-width: 423px;
+}
+.sidecolumns h3{
+  color: blue;
+}
+.lecture{
+  background-color: gray;
+}
+
+/*learning section*/
+#learning {
+  display: inline-flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background-color: gray;
+  margin:32px 24px;
+  justify-content: center;
+}
+.learning{
+  display: wrap;
+  text-align: center;
+  width: 100%;
+  margin:16px 32px;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+.software img,
+.computer img,
+.design img,
+.data img,
+.business img,
+.marketing img{
+  width:100%;
+  min-height: 220px;
+}
+
+.software,
+.computer,
+.design,
+.data,
+.business,
+.marketing{
+  background-color: white;
+  display: flex;
+  text-align: left;
+  width:30%;
+  flex-direction: column;
+  margin: 16px;
+}
+.flex-container.textbubble{
+  align-items: flex-start;
+  margin: 16px 16px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* video section */
+#video{
+  display: inline-block;
+}
+.vidtitle{
+  display:block;
+  text-align: center;
+}
+.videocontent{
+  display: flex;
+  justify-content: flex-start;
+  margin: 32px 24px;
+}
+.video{
+  min-width:60%;
+  max-width: 60%;
+}
+#video video{
+  width: 100%;
+  border:5px solid brown;
+  margin-right: 16px;
+}
+.vidcolumns{
+  width:35%;
+  flex-direction: column;
+  margin-right: 16px;
+}
+.fisma img,
+.nowandthen img{
+  margin: 16px;
+  min-width: 35%;
+  max-width: 35%;
+}
+.vidtext{
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  margin-left: 16px;
+}
+.fisma,
+.nowandthen{
+  display: flex;
+  min-width: 423px;
+  min-height: 168px;
+  margin-left: 16px;
+}
+.fisma{
+  background-color: gray;
+}
+
+/* footer */
+
+footer{
+  display:inline-flex;
+  border-top: 5px solid black;
+  width: 100%;
+  justify-content: space-between;
+}
+.firstfooter{
+  margin-left: 24px;
+}
+.lastfooter{
+  display:flex;
+  justify-content: flex-start;
+}
+.lastfooter h5{
+  margin:50px;
+}
+
+/* mobile codes */
+@media only screen and (max-width: 480px) {
+  .head{
+    height:64px;
+    margin-bottom: 180px;
+  }
+  .learn{
+    margin:32px 16px;
+  }
+  .learn h1{
+    margin-bottom: 32px;
+  }
+  .learn h2{
+    margin-bottom:24px;
+  }
+  .sidecolumns{
+    margin:16px 16px 32px 16px;
+  }
+  .sidecolumns h1{
+    margin-left: 16px;
+  }
+  .orientation,
+  .campus,
+  .lecture{
+    margin-bottom: 16px;
+  }
+  .learning{
+    margin:32px 0px 16px 0px;
+  }
+  .textbubble h2{
+    padding:16px;
+    background-color: gray;
+    margin-bottom: 8px;
+  }
+  .vidtitle{
+    margin:32px auto;
+  }
+  .videocontent video{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .firstfooter{
+    margin:16px auto;
+  }
